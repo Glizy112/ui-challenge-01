@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title> Transaction Status </title>
+        <link rel="stylesheet" href="/transaction.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    </head>
+    <body>
+        <div class="status-box">
+            <!-- <div class="bg-black h-10 w-10"></div> -->
+            <div class="icon-box">
+                <span class="material-icons" id="status-icon-check">check_circle</span>
+                <span class="material-icons" id="status-icon-warn">warning</span>
+                <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" style="z-index: 999;">
+                    <circle 
+                        cx="400" 
+                        cy="400" 
+                        fill="none" 
+                        r="148" 
+                        stroke-width="48" 
+                        stroke="whitesmoke"
+                        stroke-linecap="round" 
+                    />
+                    <circle 
+                        class="spin"
+                        cx="400" 
+                        cy="400" 
+                        fill="none" 
+                        r="148" 
+                        stroke-width="48" 
+                        stroke="#0096ff"
+                        stroke-dasharray="240 1400"
+                        stroke-linecap="round"
+                        stroke-dashoffset="31" 
+                    />
+                </svg>
+            </div>
+            <p id="status"> Analyzing Transaction </p>
+        </div>
+    </body>
+    <script src="transaction.js"></script>
+</html>
